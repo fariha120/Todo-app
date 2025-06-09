@@ -1,0 +1,143 @@
+
+:root {
+  --primary-color: #4caf50;
+  --secondary-color: #f9f9f9;
+  --text-color: #333;
+  --bg-color: #f4f4f9;
+  --hover-color: #45a049;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 5px 0;
+  color: var(--text-color);
+}
+
+header .badge {
+  background: linear-gradient(135deg, #fbd786, #f7797d);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+form input,
+form select {
+  padding: 10px;
+  margin: 0 10px 10px 0;
+  width: calc(50% - 10px);
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+}
+
+form input:focus,
+form select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+form button {
+  padding: 10px 20px;
+  background: var(--primary-color);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: var(--hover-color);
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 15px 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.task-list li.completed {
+  background: #e6ffe6;
+  color: #666;
+  text-decoration: line-through;
+}
+
+.task-list li.completed:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.task-list li span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.task-list li button {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.task-list li button:hover {
+  background: var(--hover-color);
+}
